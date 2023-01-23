@@ -129,24 +129,83 @@ body {
 
 /* home page end */
 
+/* card page start */
+.card_page {
+    display: flex;
+    gap: 18px;
+    height: 38vh;
+    padding: 2% 15%;
+}
+
+
+.card_page i{
+    font-size: 34px;
+    line-height: 2;
+    color: #2487ce;
+}
+
+.card_page h4{
+    line-height: 2;
+    color: #2487ce;
+}
+
+.card_page p{
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+
+.card_one {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px;
+    /* width: 21%; */
+}
+
+.card_two {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px;
+    /* width: 21%; */
+}
+
+.card_three {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px;
+    /* width: 21%; */
+}
+
+.card_four {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px;
+    /* width: 21%; */
+}
+
+/* card page start */
+
+
 /* media scren start */
 @media only screen and (min-width:320px) and (max-width: 750px) {
     .nav_bar ul {
         display: flex;
         flex-direction: column;
     }
-
     .header {
         height: 58vh;
+        width: 140%;
     }
-
-    .home_page h1 h2 {
+    .home_page h1 {
         font-size: 38px;
     }
-
-    .home_page {
-        height: 39vh;
+    .home_page h2 {
+        font-size: 38px;
     }
+    .content_page{
+        padding: 5%;
+    }
+    .card_page{
+        display: flex;
+        flex-direction: column;
+    } 
+
 }
 
 /* media scren end */
