@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+/* header start */
+.header {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 18px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 48px;
+}
+
+.OnePage a {
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    color: #16507b;
+    text-decoration: none;
+}
+
+.nav_bar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 28px;
+}
+
+.nav_bar a {
+    text-decoration: none;
+}
+
+.nav_bar li:hover {
+    color: #2487ce;
+}
+
+.start_btn {
+    background: #2487ce;
+    border-radius: 4px;
+    color: #fff;
+    border: none;
+    padding: 11px 21px;
+    margin: -10px 2px;
+}
+
+.dropbtn {
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #FFFFFF;
+}
+
+.dropbt:hover {
+    background: #2487ce;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* header end */
+
+/* home page start */
+.home_page {
+    display: flex;
+    display: grid;
+    place-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.home_page h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 89px;
+    color: #124265;
+    font-family: "Poppins", sans-serif;
+}
+
+.home_page h2 {
+    color: #5e5e5e;
+    margin: 10px 0 0 0;
+    font-size: 22px;
+}
+
+.Get_btn {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    padding: 14px 50px;
+    border-radius: 5px;
+    margin-top: 30px;
+    color: #fff;
+    background: #2487ce;
+    border: none;
+}
+
+/* home page end */
+
+/* media scren start */
+@media only screen and (min-width:320px) and (max-width: 750px) {
+    .nav_bar ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        height: 58vh;
+    }
+
+    .home_page h1 h2 {
+        font-size: 38px;
+    }
+
+    .home_page {
+        height: 39vh;
+    }
+}
+
+/* media scren end */
