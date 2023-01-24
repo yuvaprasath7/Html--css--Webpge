@@ -13,30 +13,34 @@
 <body>
     <div class="start_page">
         <section>
-            <div class="header">
-                <h1 class="OnePage">
-                    <a href="#">One Page</a>
-                </h1>
+            <div class="topnav" id="myTopnav">
+                <div class="OnePage">
+                    <h1>
+                        <a href="#">One Page</a>
+                    </h1>
+                </div>
                 <div class="nav_bar">
-                    <ul>
-                        <li> <a href="#Home">Home</a></li>
-                        <li> <a href="#Home">About</a></li>
-                        <li> <a href="#Home">Service</a></li>
-                        <li> <a href="#Home">PortFolio</a></li>
-                        <li> <a href="#Home">PortFolio</a></li>
-                        <li class="dropdown">
-                            <a href="" class="dropbtn">Dropdown</a>
-                            <div class="dropdown-content">
-                                <a href="#">Dropdown 1</a>
-                                <a href="#">Dropdown 2</a>
-                                <a href="#">Dropdown 3</a>
-                                <a href="#">Dropdown 4</a>
-                                <a href="#">Dropdown 5</a>
-                            </div>
-                        </li>
-                        <li> <a href="#Home">Contact</a></li>
-                        <li><button class="start_btn">Get Start</button></li>
-                    </ul>
+                    <a href="#home">Home</a>
+                    <a href="#About">About</a>
+                    <a href="#portFolio">PortFolio</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#Team">Team</a>
+                    <a href="#Pricing">Pricing</a>
+                    <a href="" class="dropdown">
+                        <p class="dropbtn">Dropdown</p>
+                        <div class="dropdown-content">
+                            <p>Dropdown 1</p>
+                            <p>Dropdown 2</p>
+                            <p>Dropdown 3</p>
+                            <p>Dropdown 4</p>
+                            <p>Dropdown 5</p>
+                        </div>
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <a href="#"><button type="button" class="start_btn">Get Start</button></a>
+                    <a href="#" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
                 </div>
             </div>
         </section>
@@ -73,7 +77,42 @@
             </div>
             <!-- card page End -->
         </section>
+        <section id="about" class="about">
+            <div class="about_page_start">
+                <div class="about_page">
+                    <h2>ABOUT US</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.</p>
+                </div>
+                <div class="about_content">
+                    <div class="about_one">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <ul>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Duis aute irure dolor in reprehenderit in
+                                voluptate velit</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat</li>
+                        </ul>
+                    </div>
+                    <div class="about_two">
+                        <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit
+                            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <button type="button" class="learn_more">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </div>
+    <div class="goto_top">
+        <button onclick="topFunction()" class="myBtn" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </button>
+    </div>
+    <script src="onepage.js"></script>
 </body>
 
 </html>
